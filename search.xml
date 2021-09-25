@@ -1,11 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>title</title>
-    <url>/2021/01/05/title/</url>
+    <title></title>
+    <url>/2021/09/25/Operation-System/base-shell%E5%91%BD%E4%BB%A4%E8%BF%9B%E9%98%B6/base-shell%E5%91%BD%E4%BB%A4%E8%BF%9B%E9%98%B6/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>numpy_and_pandas</title>
+    <url>/2021/01/06/numpy-and-pandas/</url>
+    <content><![CDATA[<h1 id="numpy-属性"><a href="#numpy-属性" class="headerlink" title="numpy 属性"></a>numpy 属性</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">array = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line"></span><br><span class="line">print(array)</span><br></pre></td></tr></table></figure>
+]]></content>
       <tags>
-        <tag>test</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2021/01/15/test/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>深度学习入门</title>
+    <url>/2021/01/13/DeepLearning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="神经网络入门"><a href="#神经网络入门" class="headerlink" title="神经网络入门"></a>神经网络入门</h1><h2 id="神经网络剖析"><a href="#神经网络剖析" class="headerlink" title="神经网络剖析"></a>神经网络剖析</h2><p>训练神经网络主要围绕以下四个方面：</p>
+<ul>
+<li>层（layer），多个层组成网络（或成为模型）</li>
+<li>输入数据（）和对应的目标（）</li>
+<li>损失函数（），用于学习的反馈信号</li>
+<li>优化器（），决定学习过程如何进行  </li>
+</ul>
+]]></content>
+      <tags>
+        <tag>deep-learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RL-note1</title>
+    <url>/2021/01/11/RL/RL-note1/</url>
+    <content><![CDATA[<hr>
+<p>  本系列为强化学习导论的学习笔记。由于个人能力有限，对理解不到位的地方欢迎各位交流指正。</p>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在这一部分，主要描述了强化学习算法的核心思想：<br>状态和动作空间足够小，可以将近似值函数表示为数组或<strong>表格</strong>。</p>
+<p>这些方法可以找到精确的解决方案，即可以找到最佳的价值函数和最优策略。因此本书的这一部分被称为<strong>表格解决方法</strong>。</p>
+<p>以下为本部分目录：</p>
+<ul>
+<li><p>赌博机问题（只有一个状态）</p>
+</li>
+<li><p>马尔科夫决策问题（贝尔曼方程及价值函数）</p>
+<blockquote>
+<p>动态规划</p>
+</blockquote>
+<blockquote>
+<p>蒙特卡洛方法</p>
+</blockquote>
+<blockquote>
+<p>时序差分学习</p>
+</blockquote>
+</li>
+<li><p>n步引导方法（蒙+时序差分）</p>
+</li>
+<li><p>表格方法规划和学习（时序差分+动态规划）</p>
+</li>
+</ul>
+<h2 id="多臂赌博机问题"><a href="#多臂赌博机问题" class="headerlink" title="多臂赌博机问题"></a>多臂赌博机问题</h2><h3 id="一个-k-臂赌博机问题"><a href="#一个-k-臂赌博机问题" class="headerlink" title="一个$k$臂赌博机问题"></a>一个$k$臂赌博机问题</h3><blockquote>
+<p><strong>考虑以下问题：</strong><br>你面对$k$种不同的选择，而在每次选择之后，你会收到一个数值奖励，该奖励取决于你选择的行动的固定概率分布。 而你的目标是在一段时间内最大化预期的总奖励.</p>
+</blockquote>
+<p>上述问题可以称作$k$臂赌博机。在这个赌博机中，只要选择了动作，$k$个动作的每一个都有预期的或平均的奖励，我们称之为该行动的 <em>价值</em>。 我们将在时间步 $t$选择的动作表示为 $A_t$，并将相应的奖励表示为 $R_t$。 然后，对于任意动作 $a$ 的价值，定义 $q_*(a)$ 是给定动作$a$的预期奖励：<br>$q_*(a)\doteq\mathbb{E}\left[R_t \mid A_t=a\right]$</p>
+]]></content>
+      <tags>
+        <tag>RL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基本base-shell命令</title>
+    <url>/2021/09/25/Operation-System/%E5%9F%BA%E6%9C%ACbase-shell%E5%91%BD%E4%BB%A4/%E5%9F%BA%E6%9C%ACbash-shell%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="bash-环境"><a href="#bash-环境" class="headerlink" title="bash 环境"></a>bash 环境</h2><p>使用如下命令可以查看该系统的默认shell:</p>
+<p><code>echo $SHELL</code></p>
+<p><img src="2021-09-25-15-38-09.png"></p>
+<h2 id="linux-目录"><a href="#linux-目录" class="headerlink" title="linux 目录"></a>linux 目录</h2><p><img src="2021-09-25-16-01-40.png"></p>
+<ul>
+<li><p>/bin：<br>bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。</p>
+</li>
+<li><p>/boot：<br>这里存放的是启动 Linux 时使用的一些核心文件，包括一些连接文件以及镜像文件。</p>
+</li>
+<li><p>/dev ：<br>dev 是 Device(设备) 的缩写, 该目录下存放的是 Linux 的外部设备，在 Linux 中访问设备的方式和访问文件的方式是相同的。</p>
+</li>
+<li><p>/etc：<br>etc 是 Etcetera(等等) 的缩写,这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p>
+</li>
+<li><p>/home：<br>用户的主目录，在 Linux 中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的，如上图中的 alice、bob 和 eve。</p>
+</li>
+<li><p>/lib：<br>lib 是 Library(库) 的缩写这个目录里存放着系统最基本的动态连接共享库，其作用类似于 Windows 里的 DLL 文件。几乎所有的应用程序都需要用到这些共享库。</p>
+</li>
+<li><p>/lost+found：<br>这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</p>
+</li>
+<li><p>/media：<br>linux 系统会自动识别一些设备，例如U盘、光驱等等，当识别后，Linux 会把识别的设备挂载到这个目录下。</p>
+</li>
+<li><p>/mnt：<br>系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在 /mnt/ 上，然后进入该目录就可以查看光驱里的内容了。</p>
+</li>
+<li><p>/opt：<br>opt 是 optional(可选) 的缩写，这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</p>
+</li>
+<li><p>/proc：<br>proc 是 Processes(进程) 的缩写，/proc 是一种伪文件系统（也即虚拟文件系统），存储的是当前内核运行状态的一系列特殊文件，这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。</p>
+</li>
+<li><p>/root：<br>该目录为系统管理员，也称作超级权限者的用户主目录。</p>
+</li>
+<li><p>/sbin：<br>s 就是 Super User 的意思，是 Superuser Binaries (超级用户的二进制文件) 的缩写，这里存放的是系统管理员使用的系统管理程序。</p>
+</li>
+<li><p>/selinux：<br>这个目录是 Redhat/CentOS 所特有的目录，Selinux 是一个安全机制，类似于 windows 的防火墙，但是这套机制比较复杂，这个目录就是存放selinux相关的文件的。</p>
+</li>
+<li><p>/srv：<br>该目录存放一些服务启动之后需要提取的数据。</p>
+</li>
+<li><p>/sys：<br>这是 Linux2.6 内核的一个很大的变化。该目录下安装了 2.6 内核中新出现的一个文件系统 sysfs 。</p>
+</li>
+</ul>
+<p>sysfs 文件系统集成了下面3种文件系统的信息：针对进程信息的 proc 文件系统、针对设备的 devfs 文件系统以及针对伪终端的 devpts 文件系统。</p>
+<p>该文件系统是内核设备树的一个直观反映。</p>
+<p>当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建。</p>
+<ul>
+<li><p>/tmp：<br>tmp 是 temporary(临时) 的缩写这个目录是用来存放一些临时文件的。</p>
+</li>
+<li><p>/usr：<br>usr 是 unix shared resources(共享资源) 的缩写，这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于 windows 下的 program files 目录。</p>
+</li>
+<li><p>/usr/bin：<br>系统用户使用的应用程序。</p>
+</li>
+<li><p>/usr/sbin：<br>超级用户使用的比较高级的管理程序和系统守护程序。</p>
+</li>
+<li><p>/usr/src：<br>内核源代码默认的放置目录。</p>
+</li>
+<li><p>/var：<br>var 是 variable(变量) 的缩写，这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p>
+</li>
+<li><p>/run：<br>是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。如果你的系统上有 /var/run 目录，应该让它指向 run。</p>
+</li>
+</ul>
+<h2 id="常用Linux命令"><a href="#常用Linux命令" class="headerlink" title="常用Linux命令"></a>常用Linux命令</h2><p><code>pwd</code> 显示会话当前目录</p>
+<p><code>cd</code>  切换路径 (.表示当前目录；..表示当前目录的父目录)</p>
+<ul>
+<li>绝对路径</li>
+<li>相对路径</li>
+</ul>
+<p><code>ls</code> 显示当前目录下的文件以及文件夹</p>
+<ul>
+<li>-F 区分文件和文件夹<br><img src="2021-09-25-17-40-31.png"></li>
+<li>-a 显示隐藏文件<br><img src="2021-09-25-17-42-37.png"></li>
+<li>-l 显示文件附加信息（也可以使用ll）<br><img src="2021-09-25-17-43-00.png"></li>
+<li>-i 显示文件iNode编号</li>
+</ul>
+<p><code>touch</code> 创建文件</p>
+<p><code>cp</code> 复制文件</p>
+<ul>
+<li>-i 复制文件前询问</li>
+<li>-R 递归复制整个目录</li>
+</ul>
+<p><code>mv</code> 可以对文件重命名，或者将文件、目录移动到另一个位置</p>
+<p><code>rm</code> 删除文件、文件夹</p>
+<ul>
+<li>-i 删除文件前询问</li>
+<li>-f 强制删除文件 <em>谨慎使用</em></li>
+<li>-r 递归的删除文件夹中的文件</li>
+</ul>
+<p><code>rm -rf *</code> 删库跑路必备</p>
+<p><code>mkdir</code> 创建文件夹</p>
+<p><code>rmdir</code> 删除文件夹 文件夹不为空时无法删除</p>
+<p><code>file</code> 查看文件类型，能够文件编码类型，是否可执行，链接到那个文件等</p>
+<p><code>cat</code> 查看整个文件<br>可以使用参数增加行号等</p>
+<p><code>more</code> <code>less</code> 显示一页文件内容</p>
+<p>more的示例<br><img src="2021-09-25-18-09-40.png"><br>如上图所示，对较长的文件最多显示一页</p>
+<p><code>tail</code> <code>head</code> 查看文件后/前10行 （默认）</p>
+<ul>
+<li>-n 可以用来指定行数</li>
+</ul>
+<h2 id="连接文件"><a href="#连接文件" class="headerlink" title="连接文件"></a>连接文件</h2><p>Linux中的连接文件分为两种：</p>
+<ul>
+<li>硬链接</li>
+<li>软连接（符号连接）</li>
+</ul>
+<p>创建硬链接：<br><code>ln code h_code</code><br><img src="2021-09-25-17-55-02.png"><br>所创建的硬链接文件和源文件的iNode号相同</p>
+<p>创建软链接：<br><code>ln -s code h_code</code><br><img src="2021-09-25-17-56-30.png"><br>所创建的软链接是一种快捷方式，本质上属于创建了一个新文件</p>
+]]></content>
+      <tags>
+        <tag>shell</tag>
       </tags>
   </entry>
 </search>
